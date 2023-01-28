@@ -9,80 +9,62 @@
     background-image: url("hero image and logo/h.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 90vh;
  }
 
 .header{
     display: flex;
     flex-wrap: wrap;
-    padding: 1em 2em;
+    padding: 1.5em 2em;
+    width: 100vw;
     justify-content: space-between;
-    background-color: whitesmoke;
-    position: fixed; 
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    position: fixed;
 
 }
 
 .logo{
     font-family: 'Lobster', cursive;
-    font-size: larger;
-    color: rgb(11, 11, 61);
+    font-size: 30px;
+    flex-wrap: wrap;
 }
 
 .nav-list{
-    width: 50vw;
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 7vw;
-    list-style-type: none;
-    background-color: aqua;
+    justify-content: flex-end;
+    flex:90%;
+}
+
+.nav-list li{
+    width:5em;
+    padding: 0.5em 0;
 }
 
 .nav-list li a{
     text-decoration: none;
     font-family: 'Vidaloka', serif;
-    font-size: 18px;
-    padding: 0 0.3em;
     color: rgb(11, 11, 61);
-    background-color: aquamarine;
-}
-
-.user-bag{
-    display: flex;
-    justify-content: space-around;
-    width: 10vw;
-    background-color: aquamarine;
-
+    font-size: medium;
+    transition: 0.1s ease;
 }
  
 .fa-solid{
-    font-size: larger;
     color: rgb(11, 11, 61);
+    padding-right: 0.5em;
+    transition: 0.1s ease;
 }
 
-.search{
-    width: 18vw;
-    background-color: aquamarine;
-    font-family: 'Vidaloka', serif;
+.nav-list li a:hover{
+    font-size:larger;
+
 }
 
-label{
-    color: rgb(11, 11, 61);
+.fa-solid:hover{
+    font-size:larger;
 }
 
-input{
-    width: 65%;
-    height: 2em;
-    border-radius: 5px;
-    padding: 0 1em;
-}
 
-.af{
-    position: relative;
-    top: 100vh;
-}
 
 
 
