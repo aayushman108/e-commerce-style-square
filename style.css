@@ -163,7 +163,6 @@ span{
 }
 button:hover{
     box-shadow: 0 4px 8px 0 rgba(8, 8, 160, 0.3), 0 6px 20px 0 rgba(8, 8, 160, 0.19);
-    
 }
 /*new arrivals*/
 .new-arrivals h1{
@@ -186,14 +185,75 @@ button:hover{
     flex: 50%;
     min-width:500px;
     height: 300px;
-    border: 2px solid black;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
 }
-.banner-2:nth-child(1){
-    background-image: url("");
+.banner-2 .left{
+    background-image: url("hero image and logo/left.jpg");
 }
-.banner-2:nth-child(2){
-    background-image: url("");
+.banner-2 .right{
+    background-image: url("hero image and logo/right.jpg");
 }
+.banner-2 button{
+    padding: 0.3em 1em;
+    margin-top: 0.5em;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+}
+.banner-2 div:hover button{
+    background-color: midnightblue;
+}
+/* Newsletter */
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    height: 30vh;
+    margin-bottom: 100px;
+}
+.news{
+    color: white;
+}
+.news h4{
+    margin-bottom: 0.7em;
+    font-size: larger;
+    font-family: 'Vidaloka', serif;
+}
+.signup{
+    display:flex;
+    flex-wrap: wrap;
+    width:350px;
+    min-width: 250px ;
+    font-size: 16px;
+}
+.signup input{
+    width: 280px; 
+    padding: 0.5em 0.8em;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+.signup button{
+    width: 70px;
+    padding: 0.5em 0.8em; 
+    background-color: navy;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+}
+/* footer */
 
 
 
