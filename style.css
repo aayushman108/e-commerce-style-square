@@ -294,12 +294,12 @@ button:hover{
 
 /*shop*/
 .bgImage-shop{
-    background-image: url("hero image and logo/left.jpg");
+    background-image: url("hero image and logo/h4.jpg");
     width: 100%;
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top 0;
 }
 
 
