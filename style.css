@@ -364,7 +364,46 @@ button:hover{
     margin-bottom: 1em;
     margin-left: 0;
 }
-
+/*active*/
+.active{
+    text-decoration: underline;
+    text-decoration-color: green;
+    color: red;
+}
+/* blog */
+.bgImage-shop.blog-header{
+    background-image: url("hero image and logo/left.jpg");
+}
+#blog .blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 2em;
+    margin-top: 2em;
+    align-items: center;
+}
+.blog-img{
+    flex-basis: 50%;
+}
+.blog-img img{
+    width: 100%;
+    height: auto;
+}
+.blog-details{
+    flex-basis: 50%;
+    padding: 1.5em;
+}
+.blog-details a{
+    text-decoration: none;
+    color: black;
+}
+.blog-details p{
+    font-size: 18px;
+    padding: 1em 0 1em 0;
+}
+.blog-details h4{
+}
 
 
 
