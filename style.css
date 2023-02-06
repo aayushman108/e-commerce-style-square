@@ -316,11 +316,11 @@ button:hover{
     flex-direction: column;
     border: 2px solid blueviolet;
 }
-.main img{
+#main img{
     width:100%;
     height: 52vh;
 }
-.main{
+#main{
     margin-bottom: 1em;
     border: 2px solid rgb(136, 112, 159);
 }
