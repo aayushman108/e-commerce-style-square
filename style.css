@@ -487,6 +487,65 @@ button:hover{
 #form-details form button{
     width: 40%;
 }
+/*cart*/
+#cart{
+    padding: 4em 2em;
+}
+#cart table{
+    width: 100%;
+}
+#cart table tr{
+    
+}
+#cart table th, #cart table td{
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+#cart table td img{
+    width: 100%;
+    height: auto;
+}
+#cart table, #cart table th, #cart table td{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    border-collapse: collapse;
+}
+#cart table td input{
+    width: 100px;
+    height: 28px;
+    padding-left: 1em;
+}
+#coupon-net{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#coupon-net .coupon{
+    flex-basis: 50%;
+    padding-left: 30px;
+}
+#coupon-net .coupon input{
+    width: 80%;
+    height: 28px;
+    padding-left: 0.5em;
+}
+#coupon-net .coupon button{
+    display: block;
+    padding: 0.3em 1em;
+    background-color: lightseagreen;
+}
+#coupon-net .net{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 0 30px 0 30px;
+}
+#coupon-net .net table{
+    border: 2px solid rgba(128, 128, 128, 0.5);
+}
+
+
 
 
 
