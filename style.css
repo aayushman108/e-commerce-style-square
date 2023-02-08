@@ -31,7 +31,7 @@
         border: 2px solid black;
         background-color: azure;
         margin-right:-32px;
-        margin-top: ;
+        margin-top: -700px;
     }
     .nav-list li{
         width: 200px;
@@ -41,6 +41,8 @@
     }
 }
 /* section 2 */
+
+
 .header{
     position: absolute;
     top: 0;
@@ -79,6 +81,8 @@
 #hamburger{
 }
 /* section 3*/
+
+
 #features{
     position: relative;
     top: 2em;
@@ -114,6 +118,8 @@
     border-radius: 0 0 10px 10px;
 }
 /* featured products*/
+
+
 #featured-products{
     position: relative;
     top:40px;
@@ -159,6 +165,8 @@ span{
     color: rgb(224, 224, 18);
 }
 /* banner */
+
+
 .banner{
     position: relative;
     width: 100%;
@@ -192,6 +200,8 @@ button:hover{
     box-shadow: 0 4px 8px 0 rgba(8, 8, 160, 0.3), 0 6px 20px 0 rgba(8, 8, 160, 0.19);
 }
 /*new arrivals*/
+
+
 .new-arrivals h1{
     margin-top: 100px;
     font-family: 'Vidaloka', serif;
@@ -238,6 +248,8 @@ button:hover{
     background-color: midnightblue;
 }
 /* Newsletter */
+
+
 .newsletter{
     display: flex;
     flex-wrap: wrap;
@@ -280,19 +292,60 @@ button:hover{
     outline: none;
 }
 /* footer */
+
+
 .footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 2em 1em;
+    padding: 2em 7vw;
     border-top: 1px solid rgb(231, 216, 216);
 }
-.column{
-
+.footer .column{
+    margin-bottom: 1.5em;
 }
-
+.footer .column .logo{
+    margin-bottom: 1em;
+}
+.footer .column h4{
+    margin-bottom: 0.6em;
+    font-size: 18px;
+}
+.footer .column p{
+    margin-bottom: 0.3em;
+    font-size: 18px;
+}
+.footer .column ul{
+    list-style: none;
+}
+.footer .column ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.footer .install .row{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.footer .install .row .one{
+    flex-basis: 48%;
+}
+.footer .install .row .two{
+    flex-basis: 48%;
+}
+.footer .install .row .one img{
+    width: 100%;
+}
+.footer .install .row .two img{
+    width: 100%;
+}
 /*shop*/
+
+
 .bgImage-shop{
     background-image: url("hero image and logo/h4.jpg");
     width: 100%;
@@ -302,6 +355,8 @@ button:hover{
     background-position: center top 0;
 }
 /*product details*/
+
+
 .product-details{
     display: flex;
     flex-wrap: wrap;
@@ -365,12 +420,16 @@ button:hover{
     margin-left: 0;
 }
 /*active*/
+
+
 .active{
     text-decoration: underline;
     text-decoration-color: green;
     color: red;
 }
 /* blog */
+
+
 .bgImage-shop.blog-header{
     background-image: url("hero image and logo/left.jpg");
 }
@@ -404,6 +463,8 @@ button:hover{
 }
 .blog-details h4{
 }
+
+
 /*about us*/
 .bgImage-shop.about-header{
     background-image: url("hero image and logo/The_Pentagon.jpg");
@@ -433,6 +494,8 @@ button:hover{
     text-align: justify;
     font-size: 18px;
 }
+
+
 /*contact*/
 #contact-details{
     display: flex;
@@ -487,10 +550,19 @@ button:hover{
 #form-details form button{
     width: 40%;
 }
+
+
 /*cart*/
 .bgImage-shop.cart-header{
     background-image: url("hero image and logo/zarablackfriday.png");
     background-position: center top 0;
+}
+.cart-header h1{
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    font-size: 40px;
+    color: white;
 }
 #cart{
     padding: 4em 2em;
