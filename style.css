@@ -466,7 +466,6 @@ button:hover{
 /*about us*/
 .bgImage-shop.about-header{
     background-image: url("hero image and logo/The_Pentagon.jpg");
-    opacity: 0.7;
 }
 #about .about-box{
     display: flex;
@@ -495,6 +494,13 @@ button:hover{
 
 
 /*contact*/
+.about-header h1{
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    font-size: 40px;
+    color: white;
+}
 #contact-details{
     display: flex;
     flex-wrap: wrap;
@@ -531,22 +537,52 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     padding: 2em;
+    justify-content: space-between;
+}
+#form-details .people{
+    flex-basis: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid black;
+}
+#form-details .people .person{
+    width: 80%;
+    border: 2px solid black;
+}
+#form-details .people .person img{
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
 }
 #form-details form{
-    flex-basis: 50%;
+    flex-basis: 60%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-#form-details form input{
+#form-details form input, #form-details form textarea{
     margin-bottom: 1em;
-    height: 25px;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 5px;
 }
-#form-details form textarea{
-    margin-bottom: 1em;
+#form-details form input:focus, #form-details form textarea:focus{
+    border:2px solid midnightblue; 
 }
 #form-details form button{
-    width: 40%;
+    width: 150px;
+    font-size: 16px;
+    padding: 0.4em 1em;
+    background-color:midnightblue;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
 }
 
 
@@ -659,6 +695,7 @@ button:hover{
 }
 
 @media screen and (max-device-width:912px ){
+    /*cart*/
     #cart #coupon-net {
         flex-basis: 38%;
     }
@@ -676,6 +713,7 @@ button:hover{
     }
 }
 @media screen and (max-device-width:540px ){
+    /*cart*/
     #cart {
         flex-direction: column;
     }
@@ -698,6 +736,7 @@ button:hover{
     }
 }
 @media screen and (max-device-width:280px ){
+    /*cart*/
     #cart .c-item td {
         padding: 3px;
         font-size: 12px;
