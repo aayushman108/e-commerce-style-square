@@ -256,7 +256,7 @@ button:hover{
     align-items: center;
     background-color: darkslategray;
     height: 30vh;
-    margin-bottom: 100px;
+    margin-bottom: 2em;
 }
 .news{
     color: white;
@@ -538,23 +538,35 @@ button:hover{
     flex-wrap: wrap;
     padding: 2em;
     justify-content: space-between;
+    border: 2px solid rgba(139, 137, 137, 0.2);
+    margin-bottom: 2em;
 }
 #form-details .people{
-    flex-basis: 25%;
+    flex-basis: 35%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
-    border: 2px solid black;
 }
 #form-details .people .person{
-    width: 80%;
-    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.8em;
 }
-#form-details .people .person img{
-    width: 25%;
+#form-details .people .person .pic{
+    width:50px;
+    margin-right: 0.8em;
+}
+#form-details .people .person .pic img{
+    width: 100%;
     height: auto;
     border-radius: 50%;
+}
+#form-details .people .person .profile{
+
+}
+#form-details .people .person P{
 }
 #form-details form{
     flex-basis: 60%;
@@ -711,6 +723,12 @@ button:hover{
     .cart-header h1 {
         top: 15vh;
     }
+    #contact-details .map iframe {
+        height: 35vh;
+    }
+    .about-header h1 {
+        top: 15vh;
+    }
 }
 @media screen and (max-device-width:540px ){
     /*cart*/
@@ -733,6 +751,54 @@ button:hover{
     }
     .footer .install .row {
         width: 200px;
+    }
+    /*contact*/
+    .about-header h1 {
+        top: 10vh;
+    }
+    #contact-details .map {
+        width: 100%;
+    }
+    #contact-details .details {
+        width: 100%;
+    }
+    #form-details {
+        flex-direction: column;
+    }
+    #form-details form {
+        width: 100%;
+    }
+    #form-details .people {
+        align-items: flex-start;
+    }
+    #form-details form {
+        margin-bottom: 2em;
+    }
+    .signup {
+        flex-direction: column;
+    }
+    .signup input {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .signup button {
+        width: 80px;
+        margin-top: 0.8em;
+        border-radius: 5px;
+    }
+    #form-details form h2{
+        margin: 0.5em 0;
+    }
+    #contact-details {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding: 2em 1em;
+        align-items: center;
+    }
+    .signup {
+        margin-top: 0.6em;
     }
 }
 @media screen and (max-device-width:280px ){
@@ -765,6 +831,31 @@ button:hover{
     }
     #cart .c-item {
         margin-bottom: 1em;
+    }
+    /*contact*/
+    #form-details form input, #form-details form textarea {
+        width: 100%;
+    }
+    #form-details {
+        padding: 0.2em;
+    }
+    #contact-details {
+        padding: 2em 0.2em;
+    }
+    #contact-details .map {
+        width: 100%;
+        padding: 0;
+    }
+    #contact-details .details {
+        width: 100%;
+        padding: 0.2em;
+        margin-bottom:1em;
+    }
+    .signup {
+        min-width: 230px;
+    }
+    .about-header h1 {
+        left: 20vw;
     }
 }
 
