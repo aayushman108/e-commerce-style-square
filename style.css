@@ -488,62 +488,107 @@ button:hover{
     width: 40%;
 }
 /*cart*/
+.bgImage-shop.cart-header{
+    background-image: url("hero image and logo/zarablackfriday.png");
+    background-position: center top 0;
+}
 #cart{
     padding: 4em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-#cart table{
-    width: 100%;
+#cart .c-item{
+    flex-basis: 60%;
+    background-color: rgba(220, 220, 220, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#cart table tr{
-    
+#cart #coupon-net{
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#cart table th, #cart table td{
+#cart .c-item td{
     text-align: center;
     padding: 5px;
     font-size: 18px;
 }
-#cart table td img{
+#cart .c-item th{
+    text-align: center;
+    padding: 8px 5px;
+    font-size: 18px;
+}
+#cart .c-item td img{
     width: 100%;
     height: auto;
 }
-#cart table, #cart table th, #cart table td{
-    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+#cart .c-item, #cart .c-item th, #cart .c-item td{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
     border-collapse: collapse;
 }
-#cart table td input{
+#cart .c-item td input{
     width: 100px;
     height: 28px;
     padding-left: 1em;
+    border: none;
+    outline: none;
+    background-color: rgba(170, 167, 167, 0.3);
+    border-radius: 2px;
 }
-#coupon-net{
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+#coupon-net .coupon, #coupon-net .net{
+    padding: 1em 0.5em;
+    background-color: black;
 }
 #coupon-net .coupon{
-    flex-basis: 50%;
-    padding-left: 30px;
+    margin-bottom: 2px;
+}
+#coupon-net .coupon h3, #coupon-net .net h3{
+    color: white;
 }
 #coupon-net .coupon input{
-    width: 80%;
-    height: 28px;
-    padding-left: 0.5em;
+    margin: 0.7em 0;
+    height: 30px;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0 0.5em;
+    border: none;
+    outline: none;
+    background-color: rgba(170, 167, 167, 0.3);
+    width: 100%;
 }
-#coupon-net .coupon button{
+#coupon-net .coupon input:focus{
+    border: 2px solid white;
+}
+#coupon-net .coupon button, #coupon-net .net button{
     display: block;
-    padding: 0.3em 1em;
-    background-color: lightseagreen;
+    padding: 0.4em 1.5em;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
 }
-#coupon-net .net{
-    flex-basis: 50%;
-    text-align: center;
-    padding: 0 30px 0 30px;
+#coupon-net .coupon button:hover, #coupon-net .net button:hover{
+    color: green;
+    background: transparent;
+    border: 2px solid green;
 }
 #coupon-net .net table{
-    border: 2px solid rgba(128, 128, 128, 0.5);
+    width: 100%;
+    margin: 0.7em 0;
 }
+#coupon-net .net table td{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+    font-size: 16px;
+    color: white;
+}
+
+
 
 
 
