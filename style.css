@@ -78,15 +78,15 @@
     text-decoration-line: underline;
     text-decoration-color: rgb(2, 27, 2);
 }
-/* section 3*/
 
 
+/* features*/
 #features{
     position: relative;
     top: 2em;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 2em;
     width: 100%;
     padding: 1em 2em;
     justify-content: space-between;
@@ -94,7 +94,6 @@
 .feature{
     width: 160px;
     margin:1em 1em 1em 1em;
-    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 }
@@ -104,7 +103,6 @@
 .image{
     width: 100%;
     height: 130px;
-    border-radius:10px 10px 0 0;
 }
 .feature p{
     padding: 2px 3px 2px;
@@ -113,7 +111,6 @@
     color:rgb(5, 5, 38);
     font-size: large; 
     background-color: palevioletred;
-    border-radius: 0 0 10px 10px;
 }
 /* featured products*/
 
@@ -459,13 +456,18 @@ button:hover{
     font-size: 18px;
     padding: 1em 0 1em 0;
 }
-.blog-details h4{
-}
-
 
 /*about us*/
 .bgImage-shop.about-header{
-    background-image: url("hero image and logo/The_Pentagon.jpg");
+    background-image: url("hero image and logo/unsplash.jpg");
+    background-position: center top 0;
+}
+.about-header h1{
+    position: absolute;
+    top: 32vh;
+    left: 40vw;
+    font-size: 40px;
+    color: white;
 }
 #about .about-box{
     display: flex;
@@ -494,7 +496,10 @@ button:hover{
 
 
 /*contact*/
-.about-header h1{
+.bgImage-shop.contact-header{
+    background-image: url("hero image and logo/The_Pentagon.jpg");
+}
+.contact-header h1{
     position: absolute;
     top: 20vh;
     left: 40vw;
@@ -562,11 +567,6 @@ button:hover{
     width: 100%;
     height: auto;
     border-radius: 50%;
-}
-#form-details .people .person .profile{
-
-}
-#form-details .people .person P{
 }
 #form-details form{
     flex-basis: 60%;
@@ -706,6 +706,8 @@ button:hover{
     color: white;
 }
 
+
+
 @media screen and (max-device-width:912px ){
     /*cart*/
     #cart #coupon-net {
@@ -729,7 +731,10 @@ button:hover{
     .about-header h1 {
         top: 15vh;
     }
+    /*about*/
 }
+
+
 @media screen and (max-device-width:540px ){
     /*cart*/
     #cart {
@@ -800,7 +805,40 @@ button:hover{
     .signup {
         margin-top: 0.6em;
     }
+    /*about*/
+    #about .about-box {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-detail {
+        width: 100%;
+        padding: 0;
+        margin-top: 1em;
+    }
+    .about-img {
+        width: 100%;
+    }
+    #features {
+        top: 1em;
+        margin-bottom: 2em;
+        padding: 1em 1em;
+        justify-content: space-around;
+    }
+    .feature {
+        width: 120px;
+    }
+    .about-detail h1 {
+        margin-bottom: 0.6em;
+    }
+    .about-detail p {
+        font-size: 15px;
+    }
+    #about .about-box {
+        border-bottom: 1.5px solid rgba(145, 143, 143, 0.2);
+    }
 }
+
+
 @media screen and (max-device-width:280px ){
     /*cart*/
     #cart .c-item td {
@@ -856,6 +894,15 @@ button:hover{
     }
     .about-header h1 {
         left: 20vw;
+    }
+}
+@media screen and (max-device-width:412px ){
+    /*about*/
+    .feature {
+        width: 150px;
+    }
+    .image {
+        height: 120px;
     }
 }
 
