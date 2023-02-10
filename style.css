@@ -37,8 +37,6 @@
         width: 200px;
         margin: 0.2em 0;
     }
-    #hamburger{
-    }
 }
 /* section 2 */
 
@@ -195,8 +193,6 @@ button:hover{
     box-shadow: 0 4px 8px 0 rgba(8, 8, 160, 0.3), 0 6px 20px 0 rgba(8, 8, 160, 0.19);
 }
 /*new arrivals*/
-
-
 .new-arrivals h1{
     margin-top: 100px;
     font-family: 'Vidaloka', serif;
@@ -424,7 +420,16 @@ button:hover{
 }
 /* blog */
 
-
+.blog-header h1{
+    position: absolute;
+    top: 25vh;
+    left: 40vw;
+    font-size: 40px;
+    color: white;
+}
+#blog{
+    border-bottom: 1.5px solid rgba(133, 130, 130, 0.2);
+}
 .bgImage-shop.blog-header{
     background-image: url("hero image and logo/left.jpg");
 }
@@ -455,6 +460,7 @@ button:hover{
 .blog-details p{
     font-size: 18px;
     padding: 1em 0 1em 0;
+    text-align: justify;
 }
 
 /*about us*/
@@ -835,6 +841,29 @@ button:hover{
     }
     #about .about-box {
         border-bottom: 1.5px solid rgba(145, 143, 143, 0.2);
+    }
+    /*blog*/
+    #blog .blog-container {
+        flex-direction: column;
+        padding: 1em;
+        margin-top: 1em;
+    }
+    .blog-img {
+        width : 100%;
+    }
+    .blog-details {
+        width : 100%;
+        padding: 1em 0 0 0;
+    }
+    .blog-details p {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .newsletter {
+        margin-top: 2em;
+    }
+    .blog-header h1 {
+            top: 12vh;
     }
 }
 
