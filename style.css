@@ -84,7 +84,7 @@
     top: 2em;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     width: 100%;
     padding: 1em 2em;
     justify-content: space-evenly;
@@ -131,10 +131,10 @@
     flex-wrap: wrap;
     padding: 1em;
     width: 100%; 
-    margin-bottom: 100px;  
+    margin-bottom: 100px; 
 }
 .product{
-    width:180px;
+    width: 180px;
     height: auto;
     margin:1em 1em 1em 1em;
     border-radius:10px; 
@@ -211,28 +211,37 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.banner-2 div{
-    flex: 50%;
-    border: none;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    background-position: center top 0;
+    margin-bottom: 2em;
 }
 .banner-2 .left{
     background-image: url("hero image and logo/left.jpg");
+    flex: 50%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 0;
+    position: relative;
 }
 .banner-2 .right{
     background-image: url("hero image and logo/right.jpg");
+    flex: 50%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 0;
+}
+.banners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.banner-content{
+    margin-top: 30px;
+    margin-right: 20px;
 }
 .banner-2 button{
     padding: 0.3em 1em;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     border: 2px solid white;
     background-color: transparent;
     font-size: 16px;
@@ -240,6 +249,23 @@ button:hover{
 }
 .banner-2 div:hover button{
     background-color: midnightblue;
+}
+/*Pagination*/
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.pagination button{
+    width: 50px;
+    border: none;
+    background-color: navy;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    font-size: 18px;
+    color: white;
+    margin-right: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
 }
 
 /* Newsletter */
@@ -252,6 +278,7 @@ button:hover{
     background-color: darkslategray;
     height: 30vh;
     margin-bottom: 2em;
+    margin-top: 1em;
 }
 .news{
     color: white;
@@ -339,12 +366,19 @@ button:hover{
 
 
 .bgImage-shop{
-    background-image: url("hero image and logo/h4.jpg");
+    background-image: url("hero image and logo/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg");
     width: 100%;
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top 0;
+}
+.bgImage-shop h1{
+    position: absolute;
+    top: 25vh;
+    left: 48vw;
+    font-size: 40px;
+    color: white;
 }
 /*product details*/
 
@@ -770,10 +804,11 @@ button:hover{
     .about-header h1 {
         top: 15vh;
     }
-    /*about*/
+    /*shop*/
+    .bgImage-shop {
+        height: 40vh;
+    }
 }
-
-
 @media screen and (max-device-width:540px ){
     /*cart*/
     #cart {
@@ -902,9 +937,38 @@ button:hover{
     .banner-2 {
         flex-direction: column;
     }
+    /*featured products*/
+    .container {
+        justify-content: space-evenly;
+    }
+    /*banner*/
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner button {
+        left: 100px;
+    }
+    .banner {
+        height: 50vh;
+    }
+    /*banner-2*/
+    .banner-content {
+        margin-bottom: 50px;
+    }
+    /*shop*/
+    .bgImage-shop h1 {
+        top: 15vh;
+        left: 42vw;
+    }
 }
-
-
+@media screen and (max-device-width:414px ){
+    .product img {
+        height: 300px;
+    }
+    .product {
+        width: 260px;
+    }
+}
 @media screen and (max-device-width:280px ){
     /*cart*/
     #cart .c-item td {
