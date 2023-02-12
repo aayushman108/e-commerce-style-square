@@ -24,23 +24,39 @@
         background-image: url("hero image and logo/h2.jpg");
         height: 70vh;
     }
-    .nav-list{
+    .nav-list {
         flex-direction: column;
-        width: 200px;
-        height: 70vh;
-        border: 2px solid black;
-        background-color: azure;
-        margin-right:-32px;
-        margin-top: -700px;
+        margin-right: -34px;
+        margin-top: -25px;
+        width: 160px;
+        height:70vh;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    #hamburger {
+        display: flex;
+        position: absolute;
+        left: 80vw;
+        top: 35px;
+    }
+    .nav-list li a {
+        padding: 0;
+    }
+    .nav-list {
+        padding: 0.8em 0;
+    }
+    .nav-list li {
+        padding: 0.3em 1em;
+    }
+    
+}
+@media screen and (min-device-width:700px ) {
+    #hamburger {
+        display: none;
     }
     .nav-list li{
-        width: 200px;
-        margin: 0.2em 0;
+        padding: 0 1em;
     }
 }
-/* section 2 */
-
-
 .header{
     position: absolute;
     top: 0;
@@ -64,18 +80,21 @@
     flex-wrap: wrap;
     border: 2px solid blue;
 }
-.nav-list li{
-    padding: 0 1em;
-}
 .nav-list li a{
     font-family: 'Vidaloka', serif;
     text-decoration: none;
-    color:rgb(5, 5, 38)
+    color:rgb(5, 5, 38);
 }
 .nav-list li a:hover{
     text-decoration-line: underline;
     text-decoration-color: rgb(2, 27, 2);
 }
+.fa-bars{
+    margin-right: 0.8em;
+}
+
+
+/* section 2 */
 
 
 /* features*/
@@ -278,7 +297,7 @@ button:hover{
     background-color: darkslategray;
     height: 30vh;
     margin-bottom: 2em;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .news{
     color: white;
