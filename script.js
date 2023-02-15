@@ -15,6 +15,12 @@ smallImg[3].onclick= function(){
 }
 
 //menu drop
-function dropDownBar(){
-    document.getElementsByClassName("nav-list").style.marginTop= "-25px";
+//var hamburger= document.querySelector("#hamburger");
+//var dropMenu= document.querySelector("#menu");
+document.querySelector("#hamburger").addEventListener('click', myDropDown);
+function myDropDown(){
+    document.querySelector("#menu").style.marginTop= "-25px";
+    document.querySelector("#hamburger").style.display= "none";
 }
+
+
