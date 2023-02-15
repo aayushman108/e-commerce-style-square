@@ -19,34 +19,40 @@
     position: relative;
     top: 500px;  
 }
-@media screen and (max-width:700px ) {
+
+@media screen and (max-width:920px ) {
     .bgImage{
         background-image: url("hero image and logo/h2.jpg");
         height: 70vh;
+        background-position: center top 0;
     }
     #menu{
-        margin-right: -34px;
-        margin-top: -600px;
+        position: fixed;
+        top: 0;
+        right: -160px;
         width: 160px;
-        height:70vh;
-        background-color: rgba(255, 255, 255, 0.7);
+        height:auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.3s;
+    }
+    #menu.slide{
+        right: 0;
     }
     .nav-list {
         flex-direction: column;
     }
     #hamburger {
-        display: flex;
-        position: absolute;
-        left: 85vw;
-        top: 35px;
+        font-size: 24px;
     }
     .fa-bars{
-        padding: 0.8em 1em;
+        padding: 0.3em 0.5em;
     }
     .fa-bars:hover{
         Background-color: grey;
         border-radius: 50%;
     }
+    
     .nav-list li a {
         padding: 0;
     }
@@ -56,14 +62,21 @@
     .nav-list li {
         padding: 0.3em 1em;
     }
+    #menu li .fa-xmark{
+        display: initial;
+        font-size: 20px;
+    }
     
 }
-@media screen and (min-width:700px ) {
+@media screen and (min-width:920px ) {
     #hamburger {
         display: none;
     }
     .nav-list li{
-        padding: 0 1em;
+        padding: 0.4em 1em;
+    }
+    #menu li .fa-xmark{
+        display: none;
     }
 }
 .nav-list span{
@@ -964,6 +977,12 @@ button:hover{
     .banner-2 {
         flex-direction: column;
     }
+    .logo {
+        font-size: 30px;
+    }
+    .header {
+        padding: 1em 1em;
+    }
     /*featured products*/
     .container {
         justify-content: space-evenly;
@@ -1051,6 +1070,13 @@ button:hover{
     }
     .about-header h1 {
         left: 20vw;
+    }
+    /*index*/
+    #hamburger {
+        font-size: 20px;
+    }
+    .logo {
+        font-size: 25px;
     }
 }
 @media screen and (max-width:412px ){
