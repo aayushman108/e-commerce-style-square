@@ -12,9 +12,10 @@ smallImg[2].onclick= function(){
 }
 smallImg[3].onclick= function(){
     mainImg.src= smallImg[3].src;
-}*/
-
+}
+*/
 //menu drop
+
 const hamburger= document.getElementById("hamburger");
 const menu= document.getElementById("menu");
 hamburger.addEventListener('click', mySlide);
@@ -29,5 +30,4 @@ function slideOut(){
     menu.classList.remove('slide');
     hamburger.style.visibility= "initial";
 }
-
 
